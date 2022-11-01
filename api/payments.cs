@@ -38,7 +38,6 @@ namespace K2.oAuthData
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
         {
-            log.LogInformation("C# HTTP trigger function processed a request.");
             Random rnd = new Random();
 
             string ID = req.Query["ID"];
